@@ -11,6 +11,7 @@ body {
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
+  height: 100vh;
 }
 
 body * {
@@ -211,4 +212,15 @@ html.light .footer-text {
 
 html.light .footer-line {
   background: linear-gradient(90deg, transparent, #6d28d9, transparent);
+}
+
+/*  media queries */
+
+@media (min-width: 780px) {
+  body{
+    background-image: url(/assets/bg-desktop.jpg);
+  }
+  html.light body{
+    background-image: url(/assets/bg-desktop-light.jpg);
+  }
 }
